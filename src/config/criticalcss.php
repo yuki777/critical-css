@@ -31,6 +31,8 @@ return [
     */
 
     'routes' => [
+        ['key' =>'static', 'css/app.css'],
+        ['users/profile', 'css/app2.css']
         // 'static/route',               // In Blade: `@criticalCss('static/route')`
         // 'users/profile' => 'users/1', // In Blade: `@criticalCss('users/profile')`
     ],

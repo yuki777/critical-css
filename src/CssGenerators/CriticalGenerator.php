@@ -41,8 +41,8 @@ class CriticalGenerator implements CssGeneratorInterface
      * {@inheritdoc}
      */
     public function __construct(array $css,
-                                HtmlFetcherInterface $htmlFetcher,
-                                StorageInterface $storage)
+        HtmlFetcherInterface $htmlFetcher,
+        StorageInterface $storage)
     {
         $this->css         = $css;
         $this->htmlFetcher = $htmlFetcher;
@@ -82,7 +82,7 @@ class CriticalGenerator implements CssGeneratorInterface
     /**
      * {@inheritdoc}
      */
-    public function generate($uri, $alias = null)
+    public function generate($uri, $uriCss = '', $alias = null)
     {
         $html = $this->htmlFetcher->fetch($uri);
 
@@ -103,8 +103,12 @@ class CriticalGenerator implements CssGeneratorInterface
             $builder->add('--timeout='.$this->timeout);
         }
 
-        foreach ($this->css as $css) {
-            $builder->add('--css='.$css);
+        if ($uriCss === '') {
+            foreach ($this->css as $css) {
+                $builder->add('--css=' . $css);
+            }
+        } else {
+            $builder->add('--css=' . $uriCss);
         }
 
         foreach ($this->ignore as $ignore) {
