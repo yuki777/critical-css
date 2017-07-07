@@ -1,6 +1,6 @@
 <?php
 
-namespace Alfheim\CriticalCss\Facades;
+namespace MahiMahi\CriticalCss\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

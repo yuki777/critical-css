@@ -1,6 +1,6 @@
 <?php
 
-namespace Alfheim\CriticalCss\CssGenerators;
+namespace MahiMahi\CriticalCss\CssGenerators;
 
 use RuntimeException;
 

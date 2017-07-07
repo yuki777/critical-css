@@ -1,10 +1,10 @@
 <?php
 
-namespace Alfheim\CriticalCss\CssGenerators;
+namespace MahiMahi\CriticalCss\CssGenerators;
 
 use Symfony\Component\Process\ProcessBuilder;
-use Alfheim\CriticalCss\Storage\StorageInterface;
-use Alfheim\CriticalCss\HtmlFetchers\HtmlFetcherInterface;
+use MahiMahi\CriticalCss\Storage\StorageInterface;
+use MahiMahi\CriticalCss\HtmlFetchers\HtmlFetcherInterface;
 
 /**
  * Generates critical-path CSS using the Critical npm package.
@@ -16,10 +16,10 @@ class CriticalGenerator implements CssGeneratorInterface
     /** @var array */
     protected $css;
 
-    /** @var \Alfheim\CriticalCss\HtmlFetchers\HtmlFetcherInterface */
+    /** @var \MahiMahi\CriticalCss\HtmlFetchers\HtmlFetcherInterface */
     protected $htmlFetcher;
 
-    /** @var \Alfheim\CriticalCss\Storage\StorageInterface */
+    /** @var \MahiMahi\CriticalCss\Storage\StorageInterface */
     protected $storage;
 
     /** @var string */

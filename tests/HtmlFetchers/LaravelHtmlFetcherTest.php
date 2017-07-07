@@ -5,7 +5,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Contracts\Foundation\Application;
-use Alfheim\CriticalCss\HtmlFetchers\LaravelHtmlFetcher;
+use MahiMahi\CriticalCss\HtmlFetchers\LaravelHtmlFetcher;
 
 class LaravelHtmlFetcherTest extends TestCase
 {
@@ -67,7 +67,7 @@ class LaravelHtmlFetcherTest extends TestCase
     }
 
     /**
-     * @expectedException \Alfheim\CriticalCss\HtmlFetchers\HtmlFetchingException
+     * @expectedException \MahiMahi\CriticalCss\HtmlFetchers\HtmlFetchingException
      */
     public function testFailingFetch()
     {
@@ -79,7 +79,7 @@ class LaravelHtmlFetcherTest extends TestCase
     /**
      * @param  \Illuminate\Contracts\Http\Kernel $kernel
      *
-     * @return \Alfheim\CriticalCss\HtmlFetchers\LaravelHtmlFetcher
+     * @return \MahiMahi\CriticalCss\HtmlFetchers\LaravelHtmlFetcher
      */
     protected function mockLaravelHtmlFetcher(Kernel $kernel)
     {

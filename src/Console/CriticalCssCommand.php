@@ -1,12 +1,12 @@
 <?php
 
-namespace Alfheim\CriticalCss\Console;
+namespace MahiMahi\CriticalCss\Console;
 
 use Illuminate\Console\Command;
 
 abstract class CriticalCssCommand extends Command
 {
-    /** @var \Alfheim\CriticalCss\Storage\StorageInterface */
+    /** @var \MahiMahi\CriticalCss\Storage\StorageInterface */
     protected $storage;
 
     /**

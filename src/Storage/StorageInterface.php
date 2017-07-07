@@ -1,6 +1,6 @@
 <?php
 
-namespace Alfheim\CriticalCss\Storage;
+namespace MahiMahi\CriticalCss\Storage;
 
 /**
  * This handles reading and writing critical-path CSS from disk.
@@ -14,7 +14,7 @@ interface StorageInterface
      *
      * @return string
      *
-     * @throws \Alfheim\CriticalCss\Storage\CssReadException
+     * @throws \MahiMahi\CriticalCss\Storage\CssReadException
      */
     public function readCss($uri);
 
@@ -26,7 +26,7 @@ interface StorageInterface
      *
      * @return bool
      *
-     * @throws \Alfheim\CriticalCss\Storage\CssWriteException
+     * @throws \MahiMahi\CriticalCss\Storage\CssWriteException
      */
     public function writeCss($uri, $css);
 }

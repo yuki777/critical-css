@@ -1,9 +1,9 @@
 <?php
 
-namespace Alfheim\CriticalCss;
+namespace MahiMahi\CriticalCss;
 
 use Mockery as m;
-use Alfheim\CriticalCss\BladeUtils;
+use MahiMahi\CriticalCss\BladeUtils;
 use Illuminate\View\Compilers\BladeCompiler;
 
 class BladeUtilsTest extends \TestCase
@@ -56,7 +56,7 @@ function app($a)
         static $storage = null;
 
         if (is_null($storage)) {
-            $storage = m::mock('Alfheim\CriticalCss\Storage\StorageInterface');
+            $storage = m::mock('MahiMahi\CriticalCss\Storage\StorageInterface');
 
             $storage->shouldReceive('css')->once()
                     ->with(m::type('string'))

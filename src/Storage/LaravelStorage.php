@@ -1,6 +1,6 @@
 <?php
 
-namespace Alfheim\CriticalCss\Storage;
+namespace MahiMahi\CriticalCss\Storage;
 
 use Illuminate\Contracts\Filesystem\Filesystem;
 

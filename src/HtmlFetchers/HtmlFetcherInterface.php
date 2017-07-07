@@ -1,6 +1,6 @@
 <?php
 
-namespace Alfheim\CriticalCss\HtmlFetchers;
+namespace MahiMahi\CriticalCss\HtmlFetchers;
 
 /**
  * The purpose of this interface is to fetch, or generate, the full HTML
@@ -27,7 +27,7 @@ interface HtmlFetcherInterface
      * @return string
      *         The HTML contents.
      *
-     * @throws \Alfheim\CriticalCss\HtmlFetchers\HtmlFetchingException
+     * @throws \MahiMahi\CriticalCss\HtmlFetchers\HtmlFetchingException
      */
     public function fetch($uri);
 }

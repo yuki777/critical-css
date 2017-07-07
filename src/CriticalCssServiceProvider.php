@@ -1,11 +1,11 @@
 <?php
 
-namespace Alfheim\CriticalCss;
+namespace MahiMahi\CriticalCss;
 
 use Illuminate\Support\ServiceProvider;
-use Alfheim\CriticalCss\Storage\LaravelStorage;
-use Alfheim\CriticalCss\HtmlFetchers\LaravelHtmlFetcher;
-use Alfheim\CriticalCss\CssGenerators\CriticalGenerator;
+use MahiMahi\CriticalCss\Storage\LaravelStorage;
+use MahiMahi\CriticalCss\HtmlFetchers\LaravelHtmlFetcher;
+use MahiMahi\CriticalCss\CssGenerators\CriticalGenerator;
 
 class CriticalCssServiceProvider extends ServiceProvider
 {

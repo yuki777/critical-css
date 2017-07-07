@@ -1,6 +1,6 @@
 <?php
 
-namespace Alfheim\CriticalCss;
+namespace MahiMahi\CriticalCss;
 
 use Illuminate\View\Compilers\BladeCompiler;
 

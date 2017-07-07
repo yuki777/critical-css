@@ -1,6 +1,6 @@
 <?php
 
-namespace Alfheim\CriticalCss\HtmlFetchers;
+namespace MahiMahi\CriticalCss\HtmlFetchers;
 
 use Closure;
 use Illuminate\Http\Request;
