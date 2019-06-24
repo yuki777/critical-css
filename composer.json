@@ -1,5 +1,5 @@
 {
-  "name": "mahi-mahi/critical-css",
+  "name": "yuki777/critical-css",
   "description": "A Laravel package for generating and using inline critical-path CSS.",
   "keywords": ["css", "performance", "laravel"],
   "authors": [
